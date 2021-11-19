@@ -9,9 +9,16 @@ import functions as fn
 st.set_page_config(layout="wide")
 
 st.title('Visualizing Monthly Income and Expenses')
+st.write('Welcome! This web app is created to help users gain a comprehensive picture of their financials through visualizations')
+st.markdown('''
+            1. Simply fill in the information in the boxes below. If some topics do not apply, just leave it at 0. (Don't worry, user data is not collected here)
+            2. Plot and metrics are updated as the input response is changed
+            3. The median and average metrics stated are based in Canada and in Canadian Dollars 
+            
+            ''')
+
 
 # ----------- create boxes where user can input their reponses -----------------------------------
-st.subheader('User input')
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.subheader('Sources of income:')
